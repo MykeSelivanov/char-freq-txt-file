@@ -9,3 +9,4 @@ In a Unix-type invoronment invoke the program like this:
 ```bash
 node charfreq.js < textFile.txt
 ```
+You can modify test.txt file present in the folder and ```node charfreq.js < test.txt``` to test
