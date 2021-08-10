@@ -32,7 +32,7 @@ class Histogram {
         // loop through the text characters
         for (let char of text) {
             let count = this.letterCounts.get(char);
-            this.letterCounts.set(character, count + 1);
+            this.letterCounts.set(char, count + 1);
             this.totalLetters++;
         }
     }
