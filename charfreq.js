@@ -55,5 +55,16 @@ class Histogram {
         for (let entry of entries) {
             entry[1] = entry[1] / this.totalLetters * 100;
         }
+
+        // disregard an entry if it is less than 1%
+        entries = entries.filter(entry => entry[1] >= 1);
+    
+        // converting each entry to the line of text
+        let lines = entries.map(
+            ([l,n]) => `${l}: ${'#'.repeat(Math.round(n))} ${n.toFixed(2)}`
+        );
+
+        // concatenate lines, separated with newline character
+        return lines.join('\n');
     }
 }
