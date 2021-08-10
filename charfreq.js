@@ -79,3 +79,7 @@ async function histogramFromStdin(){
     }
     return histogram;
 }
+
+// Main body of the program
+// makes a Histogram object from stdin and then printts the histogram
+histogramFromStdin().then(histogram => {console.log(histogram.toString());});
