@@ -1,0 +1,6 @@
+this is the file to test
+testing multline inputs
+numbers: 0123456789 10111213141516
+special chars: -`@#$^&*()_+{[?/.,]}
+
+the most common char should be - zzzZZZzzzZZZzzz
