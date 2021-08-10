@@ -68,3 +68,14 @@ class Histogram {
         return lines.join('\n');
     }
 }
+
+// This async function creates a Histogram object, asynchronosly reads chunks of text from standard input, and adds chunks 
+// to histogram. When end of the stream is reached, this histogram is returned
+async function histogramFromStdin(){
+    process.stdin.setEncoding('utf-8'); // set to read unicode strings, not bytes
+    let histogram = new Histogram();
+    for await (let chunk of process.stdin){
+        histogram.add(chunk);
+    }
+    return histogram;
+}
