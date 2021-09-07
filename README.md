@@ -1,5 +1,5 @@
 # char-freq-txt-file
-This program reads text from standart input, computes the frequency of each letter in that text, and displays a histogram of the mostfrequently used characters
+This program reads text from standart input, computes the frequency of each letter in that text, and displays a histogram of the most frequently used characters
 
 ## Techologies
 - Node.js >= v12
